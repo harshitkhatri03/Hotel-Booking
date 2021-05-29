@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  font-family: Arial;
+  font-size: 17px;
+  padding: 8px;
+   background-image: url("hello.jpg");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: blue;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: green;
+}
+
+a {
+  color: #2196F3;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+</style>
+<script>
+function myfunction(){
+var x=f1.f2.value;
+var y=f1.f3.value;
+var z=f1.f4.value;
+var a=f1.f5.value;
+var b=f1.f6.value;
+var c=f1.f7.value;
+var d=f1.f8.value;
+var e=f1.f9.value;
+var f=f1.f10.value;
+var g =f1.f11.value;
+if(x==" "||x<'a'||x>'z')
+{
+ alert("name must be filled");
+return false;
+}
+if(y==" "||y<'a'||y>'z')
+{
+ alert("email must be filled");
+return false;
+}
+
+else if(z==""||z.length<10||z.length>10)
+{
+ alert("check your number");
+ return false;
+}
+else if(a==""||a<'a'||a>'z')
+{
+ alert("address must be filled");
+return false;
+}
+else if(b==""||b<'a'||b>'z')
+{
+ alert("city must be filled");
+return false;
+}
+else if(c==""||c<'a'||c>'z')
+{
+ alert("state must be filled");
+return false;
+}
+else if(d==""||d.length<12||d.length<12)
+{
+ alert("check your card number");
+return false;
+}
+else if(e==""||e.length<2||e.length>2)
+{
+ alert("not correct");
+return false;
+}
+else if(f==""||f.length<4||f.length>4)
+{
+ alert("not correct");
+return false;
+}
+else if(g==""||g.length<3||g.length>3)
+{
+ alert("not correct");
+return false;
+}
+else
+{
+ return true;
+}
+
+}
+</script>
+</head>
+<body>
+
+<div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form action="confirm.html" name="f1" onsubmit="return myfunction()">
+      
+        <div class="row">
+        
+
+          <div class="col-50">
+            <h3>Payment</h3>
+       
+          Name on card: <input type="text" name="f8"><br>
+           
+         Exp Month: <input type="text" name="f9"><br>
+            <div class="row">
+              <div class="col-50">
+               Exp Year: <input type="text" name="f10">
+              </div>
+              <div class="col-50">
+              CVV: <input type="password" name="f11"><br>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+       
+      <button class="btn" onclick="myfunction()" type="submit">Continue to Pay</button>
+
+      </form>
+
+    </div>
+  </div>
+
+</div>
+     
+
+</body>
+</html>

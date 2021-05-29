@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<style>
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	background: #eee;
+	color: #444;
+	-webkit-font-smoothing: antialiased;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light",
+		"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight: 300;
+	font-weight: 400;
+	height: auto !important;
+	height: 100%;
+	min-height: 100%;
+	text-rendering: optimizeLegibility;
+}
+
+header {
+	background-color: rgb(140, 193, 193);
+	border-bottom: 1px solid rgba(0, 0, 0, .15);
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+header>nav {
+	background-color: white;
+	display: none;
+	flex: 1;
+	transform: 300ms all ease;
+}
+
+header nav>ul {
+	list-style-type: none;
+}
+
+header nav>ul>li>a {
+	display: block;
+	color: rgba(0, 0, 0, .65);
+	font-weight: 700;
+	padding: 1.5rem 0;
+	text-decoration: none;
+	transition: 250ms all ease;
+}
+
+header>nav>ul>li:hover>a {
+	color: rgb(140, 193, 193);
+}
+
+header {
+	background-color: white;
+	flex-direction: row;
+	line-height: 90px;
+	padding: 0 3rem;
+	position: none;
+	text-align: left;
+	width: 100%;
+}
+
+@media all and (min-width: 600px) {
+	header>div#logo>div#navToggle {
+		display: none;
+	}
+	header>nav {
+		background-color: transparent;
+		display: block;
+	}
+	header>nav>ul {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: flex-end;
+	}
+	header nav>ul>li {
+		border-bottom: none;
+	}
+	header nav>ul>li>a {
+		padding: 0 1.25rem;
+	}
+	.row {
+		display: -ms-flexbox; /* IE10 */
+		display: flex;
+		-ms-flex-wrap: wrap; /* IE10 */
+		flex-wrap: wrap;
+		padding: 0 4px;
+	}
+	.column {
+		-ms-flex: 25%; /* IE10 */
+		flex: 25%;
+		max-width: 25%;
+		padding: 0 4px;
+	}
+	.column img {
+		margin-top: 8px;
+		vertical-align: middle;
+	}
+	@media screen and (max-width: 800px) {
+		.column {
+			-ms-flex: 50%;
+			flex: 50%;
+			max-width: 50%;
+		}
+	}
+	@media screen and (max-width: 600px) {
+		.column {
+			-ms-flex: 100%;
+			flex: 100%;
+			max-width: 100%;
+		}
+	}
+	.footer {
+		position: relative;
+		width: 100%;
+		height: calc(350px - 30px);
+		background-image: url("pictures/contact.png");
+		background-size: cover;
+		box-sizing: border-box;
+		overflow: hidden;
+	}
+	.footer1 {
+		position: absolute;
+		top: 10%;
+		left: 10%;
+		transform: translate(-50%, -50%);
+	}
+	.footer1 h3 {
+		color: rgb(230, 233, 91);
+		font-size: 30px;
+	}
+	.footer2 {
+		position: absolute;
+		top: 10%;
+		left: 79%;
+		transform: translate(-50%, -50%);
+	}
+	.footer2 h3 {
+		color: rgb(230, 233, 91);
+		font-size: 30px;
+	}
+	.footer-content1 {
+		position: absolute;
+		padding-top: 20px;
+		top: 10%;
+		left: 15%;
+		margin-top: 90px;
+		transform: translate(-50%, -50%);
+	}
+	.A a {
+		color: rgb(230, 233, 91);
+		font-size: 20px;
+		text-decoration: none;
+		display: inline-block;
+		margin-top: 10px;
+	}
+	.A a:hover {
+		background-color: rgb(255, 255, 255);
+		color: rgb(44, 49, 110);
+	}
+	.footer-content2 {
+		position: absolute;
+		padding-top: 20px;
+		top: 12%;
+		left: 78%;
+		margin-top: 90px;
+		transform: translate(-50%, -50%);
+	}
+	.B a {
+		color: rgb(230, 233, 91);
+		font-size: 20px;
+		display: inline-block;
+		margin-top: 10px;
+		text-decoration: none;
+	}
+	.B a:hover {
+		background-color: rgb(255, 255, 255);
+		color: rgb(130, 55, 228);
+	}
+}
+</style>
+<title>GALLERY</title>
+<body>
+	<header>
+		<div id="logo" class="menuUp">
+			<a href="index.html"><img src="pictures/logo.jpg" height="100px"
+				width="180px"></a>
+			<div id="navToggle">
+				<a href="#">Menu</a>
+			</div>
+		</div>
+		<nav>
+			<ul>
+        <li><a href="gallery.html">Gallery</a></li>
+		<li><a href="about.html">About</a></li>
+		<li><a href="book.html">Book Room</a></li>
+		<li><a href="bar.html">Bar</a></li>
+		<li><a href="#abcd">Contact Us</a></li>
+        <li><a href="index.html">Logout </a>
+			</ul>
+		</nav>
+	</header>
+	<div class="row">
+		<div class="column">
+			<img src="pictures/1.jpeg" style="width: 100%;"> <img
+				src="pictures/2.jpeg" style="width: 100%"> <img
+				src="pictures/3.jpeg" style="width: 100%"> <img
+				src="pictures/4.jpeg" style="width: 100%"> <img
+				src="pictures/5.jpeg" style="width: 100%"> <img
+				src="pictures/6.jpeg" style="width: 100%"> <img
+				src="pictures/32.jpeg" style="width: 100%"> <img
+				src="pictures/7.jpeg" style="width: 100%">
+		</div>
+		<div class="column">
+			<img src="pictures/8.jpeg" style="width: 100%"> <img
+				src="pictures/31.jpeg" style="width: 100%"> <img
+				src="pictures/10.jpeg" style="width: 100%"> <img
+				src="pictures/11.jpeg" style="width: 100%"> <img
+				src="pictures/12.jpeg" style="width: 100%"> <img
+				src="pictures/13.jpeg" style="width: 100%"> <img
+				src="pictures/27.jpeg" style="width: 100%"> <img
+				src="pictures/35.jpeg" style="width: 100%"> <img
+				src="pictures/22.jpeg" style="width: 100%">
+
+
+		</div>
+		<div class="column">
+			<img src="pictures/14.jpeg" style="width: 100%"> <img
+				src="pictures/15.jpeg" style="width: 100%"> <img
+				src="pictures/16.jpeg" style="width: 100%"> <img
+				src="pictures/17.jpeg" style="width: 100%"> <img
+				src="pictures/18.jpeg" style="width: 100%"> <img
+				src="pictures/19.jpeg" style="width: 100%"> <img
+				src="pictures/33.jpeg" style="width: 100%"> <img
+				src="pictures/28.jpeg" style="width: 100%"> <img
+				src="pictures/6.jpeg" style="width: 100%">
+		</div>
+		<div class="column">
+			<img src="pictures/20.jpeg" style="width: 100%"> <img
+				src="pictures/21.jpeg" style="width: 100%"> <img
+				src="pictures/22.jpeg" style="width: 100%"> <img
+				src="pictures/23.jpeg" style="width: 100%"> <img
+				src="pictures/24.jpeg" style="width: 100%"> <img
+				src="pictures/26.jpeg" style="width: 100%"> <img
+				src="pictures/29.jpeg" style="width: 100%"> <img
+				src="pictures/31.jpeg" style="width: 100%"> <img
+				src="pictures/36.jpeg" style="width: 100%">
+		</div>
+	</div>
+	<footer>
+
+		<div id="abcd" class="footer">
+			<div class="footer1">
+				<h3>Contact Us</h3>
+			</div>
+
+			<div class="footer-content1">
+				<div class="A">
+					<a href="#">Address : Hotel Oberio, Goa</a><br> <a href="#">Phone
+						No. : +91-9876543210</a><br> <a href="#">Landline :
+						+0180-2345678</a><br> <a href="#">Gmail :
+						hoteloberia@gmail.com</a><br> <a href="#">Website :
+						http://www.hoteloberio.com</a><br>
+
+				</div>
+			</div>
+
+			<div class="footer2">
+				<h3>Quick Link</h3>
+			</div>
+
+			<div class="footer-content2">
+				<div class="B">
+
+					<a href="index.html">Home</a><br> <a href="gallery.html">Gallery</a><br>
+					<a href="about.html">About Us</a><br> <a href="login.html">Login</a><br>
+					<a href="signup.html">Signup</a><br>
+
+				</div>
+			</div>
+</body>
+</html>
